@@ -32,10 +32,10 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(clojure
+   '(
      (clojure :variables
               clojure-enable-fancify-symbols 't
-              clojure-enable-sayid 't
+              clojure-enable-sayid nil ;; I put nil because it was preventing the nREPL to start with cider-jack-in-clj
               clojure-enable-linters 'clj-kondo
               clojure-enable-clj-refactor 't)
 
